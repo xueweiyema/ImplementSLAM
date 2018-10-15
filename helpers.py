@@ -81,7 +81,7 @@ def make_data(N, num_landmarks, world_size, measurement_range, motion_noise,
             # check off all landmarks that were observed 
             for i in range(len(Z)):
                 seen[Z[i][0]] = True
-    
+                print(Z[i][0])
             # move
             while not r.move(dx, dy):
                 # if we'd be leaving the robot world, pick instead a new direction
