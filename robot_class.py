@@ -87,8 +87,8 @@ class robot:
 
         ## 1. compute dx and dy, the distances between the robot and the landmark
 
-            dx=self.x-x
-            dy=self.y-y
+            dx=-self.x+x
+            dy=-self.y+y
         
         ## 2. account for measurement noise by *adding* a noise component to dx and dy
         ##    - The noise component should be a random value between [-1.0, 1.0)*measurement_noise
